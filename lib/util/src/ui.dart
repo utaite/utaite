@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../util/util.dart';
-
 class UI {
   static const double elevation = 2;
 
-  static const double indicatorSize = 10;
+  static const double collapsedAppBarHeight = kToolbarHeight;
+  static const double expandedAppBarHeight = collapsedAppBarHeight * 4;
+
+  static const double iconSize = 24;
 
   static const double paddingTripleValue = 48;
   static const double paddingDoubleValue = 32;
@@ -14,20 +15,6 @@ class UI {
   static const double paddingMediumValue = 8;
   static const double paddingSmallValue = 4;
   static const double paddingExtraSmallValue = 2;
-
-  static const double iconSize = 24;
-
-  static const double dividerHeight = 0.5;
-
-  static const double maxExtent = 480;
-
-  static const double kNavBarLargeTitleHeightExtension = 52;
-
-  static const Map<TargetPlatform, double> collapsedAppBarHeight = {
-    TargetPlatform.android: kToolbarHeight,
-    TargetPlatform.iOS: kMinInteractiveDimensionCupertino,
-  };
-  static const double expandedAppBarHeight = kNavBarLargeTitleHeightExtension + kMinInteractiveDimensionCupertino;
 
   static const EdgeInsets paddingTriple = EdgeInsets.all(paddingTripleValue);
   static const EdgeInsets paddingDouble = EdgeInsets.all(paddingDoubleValue);
@@ -108,37 +95,4 @@ class UI {
 
   static const Duration duration = Duration(milliseconds: 300);
   static const Duration immediately = Duration(milliseconds: 0);
-
-  static const TextStyle textStyle = TextStyle();
-
-  static const Widget divider = Divider(
-    height: UI.dividerHeight,
-    thickness: UI.dividerHeight,
-    indent: UI.paddingValue,
-    endIndent: UI.paddingValue,
-    color: Colors.grey,
-  );
-
-  static const Border dividerBorder = Border(
-    bottom: BorderSide(
-      width: 0.5,
-      color: Colors.grey,
-    ),
-  );
-
-  static Widget singleText(String data, {TextStyle? style}) => Text(
-        data,
-        maxLines: 1,
-        overflow: TextOverflow.ellipsis,
-        style: style,
-        strutStyle: style?.let((x) => StrutStyle.fromTextStyle(x)),
-      );
-
-  static Widget doubleText(String data, {TextStyle? style}) => Text(
-        data,
-        maxLines: 2,
-        overflow: TextOverflow.ellipsis,
-        style: style,
-        strutStyle: style?.let((x) => StrutStyle.fromTextStyle(x)),
-      );
 }
