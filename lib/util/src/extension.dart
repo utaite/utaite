@@ -74,6 +74,10 @@ extension WidgetEx on Widget {
   List<Widget> operator *(int n) => List.generate(n, (_) => this);
 }
 
+extension ColorNullableEx on Color? {
+  Color get elvis => this ?? Colors.transparent;
+}
+
 extension ColorEx on Color {
   Color withHalfOpacity() => withOpacity(opacity / 2);
 }

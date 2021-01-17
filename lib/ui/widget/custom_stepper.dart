@@ -3,7 +3,6 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:utaite/util/src/ui.dart';
 
 // TODO(dragostis): Missing functionality:
 //   * mobile horizontal mode with adding/removing steps
@@ -367,6 +366,26 @@ class _StepperState extends State<CustomStepper> with TickerProviderStateMixin {
   }
 
   Widget _buildCircle(int index, bool oldState) {
+    return SizedBox(
+      width: _kStepSize,
+      height: _kStepSize,
+      child: AnimatedContainer(
+        curve: Curves.fastOutSlowIn,
+        duration: kThemeAnimationDuration,
+        decoration: BoxDecoration(
+          color: _circleColor(index),
+          shape: BoxShape.circle,
+        ),
+        child: Center(
+          child: _buildCircleChild(index, oldState && widget.steps[index].state == StepState.error),
+        ),
+      ),
+    );
+  }
+
+  /*
+  - Edited -
+  Widget _buildCircle(int index, bool oldState) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 8.0),
       width: _kStepSize,
@@ -384,6 +403,7 @@ class _StepperState extends State<CustomStepper> with TickerProviderStateMixin {
       ),
     );
   }
+  */
 
   Widget _buildTriangle(int index, bool oldState) {
     return Container(
@@ -549,6 +569,28 @@ class _StepperState extends State<CustomStepper> with TickerProviderStateMixin {
   }
 
   Widget _buildVerticalHeader(int index) {
+    return Row(
+      children: [
+        Column(
+          children: [
+            _buildLine(!_isFirst(index)),
+            _buildIcon(index),
+            _buildLine(!_isLast(index)),
+          ],
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsetsDirectional.only(start: 16.0),
+            child: _buildHeaderText(index),
+          ),
+        ),
+      ],
+    );
+  }
+
+  /*
+  - Edited -
+  Widget _buildVerticalHeader(int index) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 24.0),
       child: Row(
@@ -564,14 +606,41 @@ class _StepperState extends State<CustomStepper> with TickerProviderStateMixin {
           ),
           Expanded(
               child: Container(
-            margin: const EdgeInsetsDirectional.only(start: 12.0),
-            child: _buildHeaderText(index),
-          )),
+                margin: const EdgeInsetsDirectional.only(start: 12.0),
+                child: _buildHeaderText(index),
+              )),
         ],
       ),
     );
   }
+  */
 
+  Widget _buildVerticalBody(int index) {
+    return Stack(
+      children: [
+        PositionedDirectional(
+          start: 0.0,
+          top: 0.0,
+          bottom: 0.0,
+          child: SizedBox(
+            width: 24.0,
+            child: Center(
+              child: SizedBox(
+                width: _isLast(index) ? 0.0 : 1.0,
+                child: Container(
+                  color: Colors.grey.shade400,
+                ),
+              ),
+            ),
+          ),
+        ),
+        _buildVerticalControls(),
+      ],
+    );
+  }
+
+  /*
+  - Edited -
   Widget _buildVerticalBody(int index) {
     return Stack(
       children: <Widget>[
@@ -609,16 +678,14 @@ class _StepperState extends State<CustomStepper> with TickerProviderStateMixin {
           firstCurve: const Interval(0.0, 0.6, curve: Curves.fastOutSlowIn),
           secondCurve: const Interval(0.4, 1.0, curve: Curves.fastOutSlowIn),
           sizeCurve: Curves.fastOutSlowIn,
-          /*
-          - Edited -
-          crossFadeState: _isCurrent(index) ? CrossFadeState.showSecond : CrossFadeState.showFirst,
-          */
           crossFadeState: CrossFadeState.showSecond,
           duration: kThemeAnimationDuration,
         ),
       ],
     );
   }
+
+  */
 
   Widget _buildVertical() {
     return ListView(
@@ -628,6 +695,7 @@ class _StepperState extends State<CustomStepper> with TickerProviderStateMixin {
         for (int i = 0; i < widget.steps.length; i += 1)
           Column(
             key: _keys[i],
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               _buildVerticalHeader(i),
               _buildVerticalBody(i),

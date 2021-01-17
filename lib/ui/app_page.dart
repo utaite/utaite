@@ -24,6 +24,15 @@ class AppPage extends StatelessWidget {
             appBarTheme: x.appBarTheme.copyWith(
               color: x.scaffoldBackgroundColor,
             ),
+            tabBarTheme: x.tabBarTheme.copyWith(
+              labelColor: x.textTheme.overline?.color,
+              unselectedLabelColor: x.disabledColor,
+            ),
+            cardTheme: x.cardTheme.copyWith(
+              elevation: UI.elevation,
+              shape: UI.rounded,
+              margin: EdgeInsets.zero,
+            ),
             textTheme: x.textTheme.copyWith(
               headline1: x.textTheme.headline1?.copyWith(
                 color: x.textTheme.overline?.color,
