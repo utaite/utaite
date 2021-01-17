@@ -9,14 +9,12 @@ class MainCareerModel {
     required this.dateType,
     required this.dateTime,
     required this.state,
-    required this.skill,
   });
 
   final String title;
   final DateTimeRange dateTime;
   final DateType dateType;
   final custom_stepper.StepState state;
-  final List<String> skill;
 
   String get dateTimeFormat => [dateTime.start, state == custom_stepper.StepState.complete ? dateTime.end : null]
       .map((x) => (x?.toString()).isset ? DateFormat(dateType.dateFormat).format(DateTime.parse(x.toString())) : '')

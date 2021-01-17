@@ -5,12 +5,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:utaite/ui/main/career/main_career_model.dart';
-import 'package:utaite/ui/main/info/main_career_model.dart';
+import 'package:utaite/ui/main/info/main_info_model.dart';
 import 'package:utaite/ui/main/main_sliver_app_bar.dart';
 import 'package:utaite/ui/widget/custom_stepper.dart' as custom_stepper;
 import 'package:utaite/util/util.dart';
 
 final List<MainInfoModel> _infoList = [
+  MainInfoModel(
+    resource: Icons.info,
+    text: '산업기능요원(현역)',
+  ),
   MainInfoModel(
     resource: '/github.png',
     text: 'utaite',
@@ -32,11 +36,6 @@ final List<MainCareerModel> _careerList = [
       end: DateTime(2017, 2),
     ),
     state: custom_stepper.StepState.complete,
-    skill: [
-      'Java / RxJava',
-      'Android',
-      'HTML / CSS / JS',
-    ],
   ),
   MainCareerModel(
     title: 'n2soft',
@@ -46,9 +45,6 @@ final List<MainCareerModel> _careerList = [
       end: DateTime(2017, 12, 01),
     ),
     state: custom_stepper.StepState.complete,
-    skill: [
-      'Kotlin / RxKotlin',
-    ],
   ),
   MainCareerModel(
     title: 'G.I.ANT corp',
@@ -58,12 +54,6 @@ final List<MainCareerModel> _careerList = [
       end: DateTime.now(),
     ),
     state: custom_stepper.StepState.indexed,
-    skill: [
-      'Flutter',
-      'Jetpack AAC / MVVM',
-      'Node.js / Vue.js',
-      'Linux Debian / AWS',
-    ],
   ),
 ];
 
@@ -105,20 +95,27 @@ class MainPage extends StatelessWidget {
                             TableRow(
                               children: [
                                 TableCell(
-                                  child: MouseRegion(
-                                    cursor: SystemMouseCursors.click,
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        js.context.callMethod('open', [x.value.url]);
-                                      },
-                                      child: ({
-                                        IconData: () => Icon(x.value.resource),
-                                        String: () => Image.asset(x.value.resource),
-                                      }[x.value.resource.runtimeType]
-                                              ?.call())
-                                          .elvis,
-                                    ),
-                                  ),
+                                  child: (() {
+                                    final widgetBuilder = ({
+                                      IconData: () => Icon(x.value.resource),
+                                      String: () => Image.asset(x.value.resource),
+                                    }[x.value.resource.runtimeType]);
+                                    final widget = (widgetBuilder?.call()).elvis;
+
+                                    if (x.value.url.isset) {
+                                      return MouseRegion(
+                                        cursor: SystemMouseCursors.click,
+                                        child: GestureDetector(
+                                          onTap: () {
+                                            js.context.callMethod('open', [x.value.url]);
+                                          },
+                                          child: widget,
+                                        ),
+                                      );
+                                    } else {
+                                      return widget;
+                                    }
+                                  })(),
                                 ),
                                 TableCell(
                                   child: Padding(
@@ -151,12 +148,7 @@ class MainPage extends StatelessWidget {
                       ..._careerList.map((x) => custom_stepper.Step(
                             title: Text(x.title),
                             subtitle: Text(x.dateTimeFormat),
-                            content: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                ...x.skill.map((y) => Text(y)),
-                              ],
-                            ),
+                            content: UI.empty,
                             state: x.state,
                           )),
                     ],
