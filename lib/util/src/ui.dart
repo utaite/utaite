@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class UI {
@@ -95,4 +94,6 @@ class UI {
 
   static const Duration duration = Duration(milliseconds: 300);
   static const Duration immediately = Duration(milliseconds: 0);
+
+  static const TextStyle textStyle = TextStyle();
 }

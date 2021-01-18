@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:utaite/ui/main/career/main_career_model.dart';
@@ -24,8 +23,16 @@ class MainCareerItem extends StatelessWidget {
         physics: NeverScrollableScrollPhysics(),
         steps: [
           ...iterable.map((x) => custom_stepper.Step(
-                title: Text(x.title),
-                subtitle: Text(x.dateTimeFormat),
+                title: Text(
+                  x.title,
+                  style: Theme.of(context).textTheme.subtitle1,
+                  strutStyle: Theme.of(context).textTheme.subtitle1?.let((x) => StrutStyle.fromTextStyle(x)),
+                ),
+                subtitle: Text(
+                  x.dateTimeFormat,
+                  style: Theme.of(context).textTheme.caption,
+                  strutStyle: Theme.of(context).textTheme.caption?.let((x) => StrutStyle.fromTextStyle(x)),
+                ),
                 content: UI.empty,
                 state: x.state,
               )),

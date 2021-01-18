@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:utaite/ui/main/main_page.dart';
@@ -58,6 +57,18 @@ class AppPage extends StatelessWidget {
                 height: 1,
               ),
               headline6: x.textTheme.headline6?.copyWith(
+                height: 1,
+              ),
+              subtitle1: x.textTheme.subtitle1?.copyWith(
+                height: 1,
+              ),
+              subtitle2: x.textTheme.subtitle2?.copyWith(
+                height: 1,
+              ),
+              bodyText1: x.textTheme.bodyText1?.copyWith(
+                height: 1,
+              ),
+              bodyText2: x.textTheme.bodyText2?.copyWith(
                 height: 1,
               ),
               caption: x.textTheme.caption?.copyWith(

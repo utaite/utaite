@@ -1,7 +1,6 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utaite/util/util.dart';
 
@@ -34,7 +33,9 @@ class MainSliverAppBar extends StatelessWidget {
           final titleWidget = SelectableText(
             title,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.headline6?.copyWith(
+              fontWeight: FontWeight.bold,
+            ),
           );
 
           return FlexibleSpaceBar(
@@ -52,7 +53,8 @@ class MainSliverAppBar extends StatelessWidget {
                       return SizedBox(
                         height: minValue,
                         width: minValue,
-                        child: ClipOval(
+                        child: ClipRRect(
+                          borderRadius: UI.borderRadiusCircle,
                           child: Opacity(
                             opacity: opacity,
                             child: ColorFiltered(
@@ -60,7 +62,7 @@ class MainSliverAppBar extends StatelessWidget {
                                 Colors.transparent.withOpacity(1 - opacity),
                                 BlendMode.saturation,
                               ),
-                              child: Image.network(
+                              child: Image.asset(
                                 image,
                                 fit: BoxFit.cover,
                               ),

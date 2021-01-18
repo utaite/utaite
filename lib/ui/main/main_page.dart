@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:rxdart/rxdart.dart';
@@ -9,12 +8,13 @@ import 'package:utaite/ui/main/career/main_career_model.dart';
 import 'package:utaite/ui/main/info/main_info_item.dart';
 import 'package:utaite/ui/main/info/main_info_model.dart';
 import 'package:utaite/ui/main/main_sliver_app_bar.dart';
+import 'package:utaite/ui/main/skill/main_skill_model.dart';
 import 'package:utaite/util/util.dart';
 
 final Map<String, List<dynamic>> _tabDataMap = {
-  '프로젝트': [],
-  '경력': MainCareerModel.init,
   '정보': MainInfoModel.init,
+  '기술': MainSkillModel.init,
+  '경력': MainCareerModel.init,
 };
 
 class MainPage extends StatelessWidget {
@@ -35,7 +35,7 @@ class MainPage extends StatelessWidget {
             return [
               MainSliverAppBar(
                 title: 'JeongHwan Song',
-                image: 'https://avatars3.githubusercontent.com/u/24307726?s=460&u=9a33419115f38209c8e4b1a6830da9faf61849f6&v=4',
+                image: '/profile.jpg',
                 expandedAppBarHeight: max(UI.expandedAppBarHeight, MediaQuery.of(context).size.height / 3),
               ),
             ];
@@ -45,69 +45,51 @@ class MainPage extends StatelessWidget {
             child: ConstrainedBox(
               constraints: BoxConstraints.loose(Size.fromWidth(400)),
               child: DefaultTabController(
-                initialIndex: _tabDataMap.length - 1,
+                initialIndex: 0,
                 length: _tabDataMap.length,
-                child: (() {
-                  final tabBarWidth = _tabDataMap.keys.map((x) => x.length).reduce(max) * UI.paddingValue;
-
-                  return Stack(
-                    children: [
-                      SizedBox(
-                        height: UI.paddingValue * 9,
-                        width: tabBarWidth,
-                        child: RotatedBox(
-                          quarterTurns: 3,
-                          child: TabBar(
-                            onTap: (index) {
-                              _indexSubject.sink.add(index);
-                            },
-                            indicatorColor: Theme.of(context).textTheme.overline?.color?.elvis,
-                            indicatorPadding: UI.paddingMediumHorizontal,
-                            tabs: [
-                              ..._tabDataMap.keys.map((x) => RotatedBox(
-                                    quarterTurns: 1,
-                                    child: Align(
-                                      alignment: Alignment.centerRight,
-                                      child: Padding(
-                                        padding: UI.paddingSmallRight,
-                                        child: Text(
-                                          x,
-                                          style: Theme.of(context).textTheme.subtitle1,
-                                          strutStyle: Theme.of(context).textTheme.subtitle1?.let((x) => StrutStyle.fromTextStyle(x)),
-                                          maxLines: 1,
-                                        ),
-                                      ),
-                                    ),
-                                  )),
-                            ],
+                child: Column(
+                  children: [
+                    TabBar(
+                      onTap: (index) {
+                        _indexSubject.sink.add(index);
+                      },
+                      indicatorColor: Theme.of(context).textTheme.overline?.color?.elvis,
+                      tabs: [
+                        ..._tabDataMap.keys.map((x) => Padding(
+                          padding: UI.paddingVertical,
+                          child: Text(
+                            x,
+                            style: Theme.of(context).textTheme.headline6,
+                            strutStyle: Theme.of(context).textTheme.headline6?.let((x) => StrutStyle.fromTextStyle(x)),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: tabBarWidth),
-                        child: StreamBuilder<int>(
-                          initialData: _tabDataMap.length - 1,
-                          stream: _indexSubject.stream,
-                          builder: (context, snapshot) {
-                            return IndexedStack(
-                              index: snapshot.data,
-                              children: [
-                                ..._tabDataMap.values.map((x) {
-                                  final widgetBuilder = ({
-                                    MainInfoModel: () => MainInfoItem(iterable: x.whereType<MainInfoModel>()),
-                                    MainCareerModel: () => MainCareerItem(iterable: x.whereType<MainCareerModel>())
-                                  }[x.firstOrNull.runtimeType]);
+                        )),
+                      ],
+                    ),
+                    Expanded(
+                      child: StreamBuilder<int>(
+                        initialData: 0,
+                        stream: _indexSubject.stream,
+                        builder: (context, snapshot) {
+                          return IndexedStack(
+                            index: snapshot.data,
+                            children: [
+                              ..._tabDataMap.values.map((x) {
+                                final widgetBuilder = ({
+                                  MainInfoModel: () => MainInfoItem(iterable: x.whereType<MainInfoModel>()),
+                                  MainCareerModel: () => MainCareerItem(iterable: x.whereType<MainCareerModel>())
+                                }[x.firstOrNull.runtimeType]);
 
-                                  return (widgetBuilder?.call()).elvis;
-                                }),
-                              ],
-                            );
-                          },
-                        ),
+                                return (widgetBuilder?.call()).elvis;
+                              }),
+                            ],
+                          );
+                        },
                       ),
-                    ],
-                  );
-                })(),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
