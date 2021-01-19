@@ -1,3 +1,5 @@
+import 'dart:js' as js;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:utaite/ui/main/career/main_career_model.dart';
@@ -23,10 +25,18 @@ class MainCareerItem extends StatelessWidget {
         physics: NeverScrollableScrollPhysics(),
         steps: [
           ...iterable.map((x) => custom_stepper.Step(
-                title: Text(
-                  x.title,
-                  style: Theme.of(context).textTheme.subtitle1,
-                  strutStyle: Theme.of(context).textTheme.subtitle1?.let((x) => StrutStyle.fromTextStyle(x)),
+                title: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: () {
+                      js.context.callMethod('open', [x.url]);
+                    },
+                    child: Text(
+                      x.title,
+                      style: Theme.of(context).textTheme.subtitle1,
+                      strutStyle: Theme.of(context).textTheme.subtitle1?.let((x) => StrutStyle.fromTextStyle(x)),
+                    ),
+                  ),
                 ),
                 subtitle: Text(
                   x.dateTimeFormat,

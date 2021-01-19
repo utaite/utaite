@@ -80,7 +80,3 @@ extension ColorNullableEx on Color? {
 extension ColorEx on Color {
   Color withHalfOpacity() => withOpacity(opacity / 2);
 }
-
-extension TextStyleNullableEx on TextStyle? {
-  TextStyle get elvis => this ?? UI.textStyle;
-}

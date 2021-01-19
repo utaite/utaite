@@ -1,5 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:utaite/ui/main/main_cubit.dart';
 import 'package:utaite/ui/main/main_page.dart';
 import 'package:utaite/util/util.dart';
 
@@ -12,7 +14,10 @@ class AppPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainPage(),
+      home: BlocProvider<MainCubit>(
+        create: (_) => MainCubit.empty(),
+        child: MainPage(),
+      ),
       title: 'Utaite',
       theme: ThemeData.dark().let((x) => x.copyWith(
             primaryColor: x.textTheme.overline?.color,

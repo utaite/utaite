@@ -2,12 +2,15 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:rxdart/rxdart.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:utaite/ui/main/career/main_career_item.dart';
 import 'package:utaite/ui/main/career/main_career_model.dart';
 import 'package:utaite/ui/main/info/main_info_item.dart';
 import 'package:utaite/ui/main/info/main_info_model.dart';
+import 'package:utaite/ui/main/main_cubit.dart';
 import 'package:utaite/ui/main/main_sliver_app_bar.dart';
+import 'package:utaite/ui/main/main_state.dart';
+import 'package:utaite/ui/main/skill/main_skill_item.dart';
 import 'package:utaite/ui/main/skill/main_skill_model.dart';
 import 'package:utaite/util/util.dart';
 
@@ -22,11 +25,31 @@ class MainPage extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final BehaviorSubject<int> _indexSubject = BehaviorSubject();
-
   @override
   Widget build(BuildContext context) {
-    print('MainPage build');
+    final tabList = [
+      ..._tabDataMap.keys.map((x) => Padding(
+            padding: UI.paddingVertical,
+            child: Text(
+              x,
+              style: Theme.of(context).textTheme.headline6,
+              strutStyle: Theme.of(context).textTheme.headline6?.let((x) => StrutStyle.fromTextStyle(x)),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          )),
+    ];
+    final bodyList = [
+      ..._tabDataMap.values.map((x) {
+        final widgetBuilder = ({
+          MainInfoModel: () => MainInfoItem(iterable: x.whereType<MainInfoModel>()),
+          MainSkillModel: () => MainSkillItem(iterable: x.whereType<MainSkillModel>()),
+          MainCareerModel: () => MainCareerItem(iterable: x.whereType<MainCareerModel>()),
+        }[x.firstOrNull.runtimeType]);
+
+        return (widgetBuilder?.call()).elvis;
+      }),
+    ];
 
     return Scaffold(
       body: SafeArea(
@@ -51,41 +74,19 @@ class MainPage extends StatelessWidget {
                   children: [
                     TabBar(
                       onTap: (index) {
-                        _indexSubject.sink.add(index);
+                        context.read<MainCubit>().update(index: index);
                       },
                       indicatorColor: Theme.of(context).textTheme.overline?.color?.elvis,
-                      tabs: [
-                        ..._tabDataMap.keys.map((x) => Padding(
-                          padding: UI.paddingVertical,
-                          child: Text(
-                            x,
-                            style: Theme.of(context).textTheme.headline6,
-                            strutStyle: Theme.of(context).textTheme.headline6?.let((x) => StrutStyle.fromTextStyle(x)),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        )),
-                      ],
+                      tabs: tabList,
                     ),
                     Expanded(
-                      child: StreamBuilder<int>(
-                        initialData: 0,
-                        stream: _indexSubject.stream,
-                        builder: (context, snapshot) {
-                          return IndexedStack(
-                            index: snapshot.data,
-                            children: [
-                              ..._tabDataMap.values.map((x) {
-                                final widgetBuilder = ({
-                                  MainInfoModel: () => MainInfoItem(iterable: x.whereType<MainInfoModel>()),
-                                  MainCareerModel: () => MainCareerItem(iterable: x.whereType<MainCareerModel>())
-                                }[x.firstOrNull.runtimeType]);
-
-                                return (widgetBuilder?.call()).elvis;
-                              }),
-                            ],
-                          );
-                        },
+                      child: Align(
+                        alignment: Alignment.topLeft,
+                        child: BlocBuilder<MainCubit, MainState>(
+                          builder: (context, state) {
+                            return bodyList[state.index];
+                          },
+                        ),
                       ),
                     ),
                   ],

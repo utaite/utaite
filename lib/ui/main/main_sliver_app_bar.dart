@@ -19,8 +19,6 @@ class MainSliverAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('MainSliverAppBar build');
-
     return SliverAppBar(
       pinned: true,
       stretch: true,

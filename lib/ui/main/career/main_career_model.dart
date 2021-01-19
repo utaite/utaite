@@ -8,12 +8,14 @@ class MainCareerModel {
     required this.title,
     required this.dateType,
     required this.dateTime,
+    required this.url,
     required this.state,
   });
 
   final String title;
   final DateTimeRange dateTime;
   final DateType dateType;
+  final String url;
   final custom_stepper.StepState state;
 
   String get dateTimeFormat => [dateTime.start, state == custom_stepper.StepState.complete ? dateTime.end : null]
@@ -28,6 +30,7 @@ class MainCareerModel {
         start: DateTime(2014, 3),
         end: DateTime(2017, 2),
       ),
+      url: 'http://y-y.hs.kr',
       state: custom_stepper.StepState.complete,
     ),
     MainCareerModel(
@@ -37,6 +40,7 @@ class MainCareerModel {
         start: DateTime(2016, 12, 27),
         end: DateTime(2017, 12, 01),
       ),
+      url: 'http://n2soft.co.kr',
       state: custom_stepper.StepState.complete,
     ),
     MainCareerModel(
@@ -46,6 +50,7 @@ class MainCareerModel {
         start: DateTime(2018, 3, 12),
         end: DateTime.now(),
       ),
+      url: 'http://www.giantcorp.co.kr',
       state: custom_stepper.StepState.indexed,
     ),
   ];
