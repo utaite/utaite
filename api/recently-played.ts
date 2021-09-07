@@ -1,14 +1,15 @@
 import { NowRequest, NowResponse } from "@vercel/node";
 import { renderToString } from "react-dom/server";
-import { Player } from "../components/NowPlaying";
-import { nowPlaying } from "../utils/spotify";
+import { Played } from "../components/Played";
+import { recentlyPlayed } from "../utils/spotify";
 
 export default async function (req: NowRequest, res: NowResponse) {
   const {
-    item = {},
-    is_playing: isPlaying = false,
-    progress_ms: progress = 0,
-  } = await nowPlaying();
+    items = [],
+  } = await recentlyPlayed();
+
+  const i = parseInt(String(req.query.i || 0))
+  const item = items[items.length > i ? i : 0].track
 
   if (req.query.open) {
     if (item && item.external_urls) {
@@ -23,7 +24,7 @@ export default async function (req: NowRequest, res: NowResponse) {
   res.setHeader("Content-Type", "image/svg+xml");
   res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate");
 
-  const { duration_ms: duration, name: track } = item;
+  const { name: track } = item;
   const { images = [] } = item.album || {};
 
   const cover = images[images.length - 1]?.url;
@@ -35,7 +36,7 @@ export default async function (req: NowRequest, res: NowResponse) {
 
   const artist = (item.artists || []).map(({ name }) => name).join(", ");
   const text = renderToString(
-    Player({ cover: coverImg, artist, track, isPlaying, progress, duration })
+      Played({ cover: coverImg, artist, track })
   );
   return res.status(200).send(text);
 }

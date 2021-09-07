@@ -6,28 +6,17 @@ export interface Props {
   cover?: string;
   track: string;
   artist: string;
-  progress: number;
-  duration: number;
-  isPlaying: boolean;
 }
 
-export const Player: React.FC<Props> = ({
+export const Played: React.FC<Props> = ({
   cover,
   track,
   artist,
-  progress,
-  duration,
-  isPlaying,
 }) => {
   return (
     <ReadmeImg width="256" height="64">
       <style>
         {`
-            .paused { 
-              animation-play-state: paused !important;
-              background: #e1e4e8 !important;
-            }
-
             img:not([src]) {
               content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
               border-radius: 6px;
@@ -40,31 +29,6 @@ export const Player: React.FC<Props> = ({
               opacity: 0;
             }
 
-            .progress-bar {
-              position: relative;
-              width: 100%;
-              height: 4px;
-              margin: -1px;
-              border: 1px solid #e1e4e8;
-              border-radius: 4px;
-              overflow: hidden;
-              padding: 2px;
-              z-index: 0;
-            }
-
-            #progress {
-              position: absolute;
-              top: -1px;
-              left: 0;
-              width: 100%;
-              height: 6px;
-              transform-origin: left center;
-              background-color: #607d8b;
-              animation: progress ${duration}ms linear;
-              animation-delay: -${progress}ms;
-            }
-            
-            .progress-bar,
             #track,
             #artist,
             #cover {
@@ -72,16 +36,11 @@ export const Player: React.FC<Props> = ({
               animation: appear 300ms ease-out forwards;
             }
 
-
             #track {
               animation-delay: 400ms;
             }
             #artist {
               animation-delay: 500ms;
-            }
-            .progress-bar {
-              animation-delay: 550ms;
-              margin-top: 4px;
             }
 
             #cover {
@@ -128,7 +87,7 @@ export const Player: React.FC<Props> = ({
         `}
       </style>
       <div
-        className={isPlaying ? "disabled" : ""}
+        className="disabled"
         style={{
           display: "flex",
           alignItems: "center",
@@ -152,11 +111,6 @@ export const Player: React.FC<Props> = ({
           <Text id="artist" color={!track ? "grey" : "blue-grey-light"}>
             {(artist || '').length > 20 ? artist.substr(0, 20) + '...' : artist || "Nothing playing..."}
           </Text>
-          {track && (
-            <div className="progress-bar">
-              <div id="progress" className={!isPlaying ? "paused" : ""} />
-            </div>
-          )}
         </div>
       </div>
     </ReadmeImg>
