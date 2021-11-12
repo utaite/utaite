@@ -10,7 +10,7 @@ const {
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 const Authorization = `Basic ${basic}`;
 
-async function getAuthorizationToken() {
+export async function getAuthorizationToken() {
   const url = new URL("https://accounts.spotify.com/api/token");
   const body = stringify({
     grant_type: "refresh_token",
