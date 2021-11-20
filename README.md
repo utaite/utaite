@@ -90,62 +90,89 @@
 <a href="http://lxixsxa.com">
     <img src="https://img.shields.io/badge/LiSA-FAD8DD">
 </a>
-<a href="https://yorushika.com/">
-    <img src="https://img.shields.io/badge/Yorushika-241718">
-</a>
-<a href="https://yoasobi-music.jp">
-    <img src="https://img.shields.io/badge/YOASOBI-F35B76">
-</a>
 <a href="https://radwimps.jp">
     <img src="https://img.shields.io/badge/RADWIMPS-1D313F">
-</a>
-<a href="https://wug-portal.jp">
-    <img src="https://img.shields.io/badge/WUG-006039">
 </a>
 <a href="http://supercell.jp">
     <img src="https://img.shields.io/badge/supercell-374A59">
 </a>
+<a href="https://wug-portal.jp">
+    <img src="https://img.shields.io/badge/WUG-006039">
+</a>
+<a href="https://yoasobi-music.jp">
+    <img src="https://img.shields.io/badge/YOASOBI-F35B76">
+</a>
+<a href="https://yorushika.com/">
+    <img src="https://img.shields.io/badge/Yorushika-241718">
+</a>
 
 ### Utaite ###
 
-<a href="https://youtube.com/channel/UCW0p7VdWVO0bn0_FELopJpQ">
-    <img src="https://img.shields.io/badge/Kohana Lam-6380AD">
-</a>
-<a href="https://youtube.com/channel/UCw9Rb-CFuDKjkYkrku_g01g">
-    <img src="https://img.shields.io/badge/Hiina-FCB3B3">
-</a>
-<a href="https://youtube.com/channel/UC8aUF9ipzQb2jTHlFoFZ1Vg">
-    <img src="https://img.shields.io/badge/Hanatan-BE191C">
-</a>
-<a href="https://youtube.com/channel/UCtOy6aKyz2ltSKSkQccXVGA">
-    <img src="https://img.shields.io/badge/Kurokumo-5A4758">
-</a>
-<a href="https://youtube.com/channel/UCShXNLMXCfstmWKH_q86B8w">
-    <img src="https://img.shields.io/badge/Kano-C1AEA0">
-</a>
-<a href="https://youtube.com/channel/UCB6pJFaFByws3dQj4AdLdyA">
-    <img src="https://img.shields.io/badge/Reol-26272E">
-</a>
-<a href="https://youtube.com/channel/UCrFREdqSkLslvG2BpYpZHmg">
-    <img src="https://img.shields.io/badge/Wolpis Kater-91CFC4">
-</a>
-<a href="https://youtube.com/channel/UC9U6I0wVpEsYHdWYWWzUHcg">
-    <img src="https://img.shields.io/badge/nameless-97706F">
-</a>
-<a href="https://www.youtube.com/channel/UCT4_Eu49Yy0ydqP57DUl3nQ">
-    <img src="https://img.shields.io/badge/Majiko-D2CBD4">
-</a>
 <a href="https://youtube.com/channel/UCvp05KhK2ShzaA54CKuE0ow">
     <img src="https://img.shields.io/badge/Ayaponzu*-FEC274">
 </a>
-<a href="https://nicovideo.jp/user/115613">
-    <img src="https://img.shields.io/badge/Yuikonnu-90AFC4">
+<a href="https://youtube.com/channel/UCoinyAuvhTzmJKv12IIkMFA">
+    <img src="https://img.shields.io/badge/Cereus-696E59">
 </a>
 <a href="https://youtube.com/channel/UC5Ce1XGat0JJOXcFWZl1jcg">
     <img src="https://img.shields.io/badge/Dalmabal-EA37DE">
 </a>
+<a href="https://youtube.com/channel/UCUEvXLdpCtbzzDkcMI96llg">
+    <img src="https://img.shields.io/badge/DAZBEE-010000">
+</a>
+<a href="https://youtube.com/channel/UCRKcKB_CKc7FeFXS7ouSvDw">
+    <img src="https://img.shields.io/badge/ENE-FF6DA1">
+</a>
+<a href="https://youtube.com/channel/UC8aUF9ipzQb2jTHlFoFZ1Vg">
+    <img src="https://img.shields.io/badge/Hanatan-BE191C">
+</a>
+<a href="https://youtube.com/channel/UCw9Rb-CFuDKjkYkrku_g01g">
+    <img src="https://img.shields.io/badge/Hiina-FCB3B3">
+</a>
+<a href="https://youtube.com/channel/UCdvq5i3RyRsoTqITD1xSxNw">
+    <img src="https://img.shields.io/badge/Hiiragi Yuka-856791">
+</a>
+<a href="https://youtube.com/channel/UCShXNLMXCfstmWKH_q86B8w">
+    <img src="https://img.shields.io/badge/Kano-C1AEA0">
+</a>
+<a href="https://youtube.com/channel/UCW0p7VdWVO0bn0_FELopJpQ">
+    <img src="https://img.shields.io/badge/Kohana Lam-6380AD">
+</a>
+<a href="https://youtube.com/channel/UCtOy6aKyz2ltSKSkQccXVGA">
+    <img src="https://img.shields.io/badge/Kurokumo-5A4758">
+</a>
+<a href="https://nicovideo.jp/user/26013622">
+    <img src="https://img.shields.io/badge/Lai Lai-70AF2F">
+</a>
+<a href="https://youtube.com/channel/UCT4_Eu49Yy0ydqP57DUl3nQ">
+    <img src="https://img.shields.io/badge/Majiko-D2CBD4">
+</a>
+<a href="https://youtube.com/channel/UCS7Ol_vxh1Ckw-E2t084ypQ">
+    <img src="https://img.shields.io/badge/Mary-F2F2F2">
+</a>
+<a href="https://youtube.com/channel/UC9U6I0wVpEsYHdWYWWzUHcg">
+    <img src="https://img.shields.io/badge/nameless-97706F">
+</a>
 <a href="https://youtube.com/channel/UCQn1FqrR2OCjSe6Nl4GlVHw">
     <img src="https://img.shields.io/badge/Raon Lee-F3243C">
+</a>
+<a href="https://youtube.com/channel/UCB6pJFaFByws3dQj4AdLdyA">
+    <img src="https://img.shields.io/badge/Reol-26272E">
+</a>
+<a href="https://youtube.com/channel/UC0D-9mI0XntQUhMdUzqiqJw">
+    <img src="https://img.shields.io/badge/Sana-CDCDCF">
+</a>
+<a href="https://youtube.com/channel/UCrFREdqSkLslvG2BpYpZHmg">
+    <img src="https://img.shields.io/badge/Wolpis Kater-91CFC4">
+</a>
+<a href="https://youtube.com/channel/UCyq2WAxX9mWHRVQxASfwMZg">
+    <img src="https://img.shields.io/badge/Wotamin-A71B21">
+</a>
+<a href="https://nicovideo.jp/user/115613">
+    <img src="https://img.shields.io/badge/Yuikonnu-90AFC4">
+</a>
+<a href="https://youtube.com/channel/UCT0GO54cT_RxKN-Ou2PwTsw">
+    <img src="https://img.shields.io/badge/Zakuro-A4005F">
 </a>
 
 ## 🎵 Now Playing ##
