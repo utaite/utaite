@@ -1,6 +1,14 @@
 ## 🏷️ Stack ##
 
+<a href="https://wakatime.com/@dfd022b5-5fb8-4671-8787-d6ea7cca7720">
+    <img src="https://wakatime.com/badge/user/dfd022b5-5fb8-4671-8787-d6ea7cca7720.svg">
+</a>
+<a href="https://wakatime.com/@53181dd6-2d1c-42dd-b06a-794b81353c45">
+    <img src="https://wakatime.com/badge/user/53181dd6-2d1c-42dd-b06a-794b81353c45.svg">
+</a>
+
 ### Languages ###
+
 <a href="https://dart.dev/">
     <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white">
 </a>
@@ -24,11 +32,15 @@
 </a>
 
 ### Skills ###
+
 <a href="https://flutter.dev">
     <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white">
 </a>
 <a href="https://developer.android.com">
     <img src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white">
+</a>
+<a href="https://reactivex.io">
+    <img src="https://img.shields.io/badge/ReactiveX-B7178C?logo=ReactiveX&logoColor=white">
 </a>
 <a href="https://nodejs.org">
     <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white">
@@ -36,17 +48,15 @@
 <a href="https://vuejs.org">
     <img src="https://img.shields.io/badge/Vue.js-4FC08D?logo=vue.js&logoColor=white">
 </a>
-<a href="https://spring.io">
-    <img src="https://img.shields.io/badge/Spring-6DB33F?logo=spring&logoColor=white">
-</a>
 <a href="https://aws.amazon.com">
     <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white">
 </a>
-<a href="#">
-    <img src="https://img.shields.io/badge/FP-000000">
+<a href="https://spring.io">
+    <img src="https://img.shields.io/badge/Spring-6DB33F?logo=spring&logoColor=white">
 </a>
 
 ### OS ###
+
 <a href="https://apple.com/macos">
     <img src="https://img.shields.io/badge/Mac-000000?logo=macos&logoColor=white">    
 </a>
@@ -57,11 +67,9 @@
 ## 💕 Interested ##
 
 ### Languages ###
+
 <a href="https://rust-lang.org">
     <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white">
-</a>
-<a href="https://scala-lang.org">
-    <img src="https://img.shields.io/badge/Scala-DC322F?logo=scala&logoColor=white">
 </a>
 <a href="https://developer.apple.com/swift">
     <img src="https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white">
@@ -78,20 +86,38 @@
 <a href="http://sakurasou.dengeki.com/">
     <img src="https://img.shields.io/badge/The Pet Girl of Sakurasou-E5058F">
 </a>
+<a href="http://violet-evergarden.jp/">
+    <img src="https://img.shields.io/badge/Violet Evergarden-4A9D85">
+</a>
+<a href="https://tenkinoko.com/">
+    <img src="https://img.shields.io/badge/Weathering with You-2CA1F9">
+</a>
 
 ### J-POP ###
 
 <a href="https://yuyu-ege.jp">
     <img src="https://img.shields.io/badge/yu--yu-34A497">
 </a>
+<a href="https://aimer-web.jp/">
+    <img src="https://img.shields.io/badge/Aimer-A7C2CD">
+</a>
 <a href="https://aimyong.net">
     <img src="https://img.shields.io/badge/Aimyon-068AE7">
+</a>
+<a href="https://backnumber.info/">
+    <img src="https://img.shields.io/badge/back number-2B2F27">
 </a>
 <a href="http://lxixsxa.com">
     <img src="https://img.shields.io/badge/LiSA-FAD8DD">
 </a>
+<a href="https://www.373official.com/">
+    <img src="https://img.shields.io/badge/Minami-82A0D5">
+</a>
 <a href="https://radwimps.jp">
     <img src="https://img.shields.io/badge/RADWIMPS-1D313F">
+</a>
+<a href="http://www.reona-reona.com/">
+    <img src="https://img.shields.io/badge/ReoNa-C62838">
 </a>
 <a href="http://supercell.jp">
     <img src="https://img.shields.io/badge/supercell-374A59">
@@ -104,6 +130,12 @@
 </a>
 <a href="https://yorushika.com/">
     <img src="https://img.shields.io/badge/Yorushika-241718">
+</a>
+<a href="https://youtube.com/channel/UC2iRI4qf-H_BdpsS8mMEjZQ">
+    <img src="https://img.shields.io/badge/Yuika-76ADCD">
+</a>
+<a href="https://zutomayo.net/">
+    <img src="https://img.shields.io/badge/ZUTOMAYO-754D8E">
 </a>
 
 ### Utaite ###
