@@ -1,13 +1,16 @@
-## 🏷️ Stack ##
+## 👋 Hi there ##
 
 <a href="https://wakatime.com/@dfd022b5-5fb8-4671-8787-d6ea7cca7720">
     <img src="https://wakatime.com/badge/user/dfd022b5-5fb8-4671-8787-d6ea7cca7720.svg">
 </a>
-<a href="https://wakatime.com/@53181dd6-2d1c-42dd-b06a-794b81353c45">
-    <img src="https://wakatime.com/badge/user/53181dd6-2d1c-42dd-b06a-794b81353c45.svg">
-</a>
 
-### Languages ###
+[![](https://github-readme-stats.vercel.app/api/wakatime?username=utaite&langs_count=10&layout=compact)](https://wakatime.com/@dfd022b5-5fb8-4671-8787-d6ea7cca7720)
+
+[![](http://mazassumnida.wtf/api/v2/generate_badge?boj=yuyu6888)](https://solved.ac/yuyu6888)
+
+## 🏷️ Stack ##
+
+### Programming languages ###
 
 <a href="https://dart.dev/">
     <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white">
@@ -66,7 +69,7 @@
 
 ## 💕 Interested ##
 
-### Languages ###
+### Programming languages ###
 
 <a href="https://rust-lang.org">
     <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white">
@@ -103,6 +106,9 @@
 </a>
 <a href="https://aimyong.net">
     <img src="https://img.shields.io/badge/Aimyon-068AE7">
+</a>
+<a href="https://atarayo-band.jp">
+    <img src="https://img.shields.io/badge/Atarayo-657091">
 </a>
 <a href="https://backnumber.info/">
     <img src="https://img.shields.io/badge/back number-2B2F27">
