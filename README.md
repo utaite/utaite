@@ -1,5 +1,16 @@
 ## 👋 Hi there ##
 
+
+<a href="mailto:utaite6888@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white">
+</a>
+<a href="https://open.spotify.com/user/31grmwyuxbo2k46e563fjaz5jupe">
+    <img src="https://img.shields.io/badge/Spotify-1ED760.svg?logo=spotify&logoColor=white">
+</a>
+<a href="#">
+    <img src="https://dcbadge.vercel.app/api/shield/395884319085690881?style=flat"/>
+</a>
+<br/>
 <a href="https://wakatime.com/@dfd022b5-5fb8-4671-8787-d6ea7cca7720">
     <img src="https://wakatime.com/badge/user/dfd022b5-5fb8-4671-8787-d6ea7cca7720.svg">
 </a>
@@ -56,15 +67,6 @@
 </a>
 <a href="https://spring.io">
     <img src="https://img.shields.io/badge/Spring-6DB33F?logo=spring&logoColor=white">
-</a>
-
-### OS ###
-
-<a href="https://apple.com/macos">
-    <img src="https://img.shields.io/badge/Mac-000000?logo=macos&logoColor=white">    
-</a>
-<a href="https://debian.org">
-    <img src="https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=white">
 </a>
 
 ## 💕 Interested ##
