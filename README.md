@@ -15,7 +15,7 @@
     <img src="https://wakatime.com/badge/user/dfd022b5-5fb8-4671-8787-d6ea7cca7720.svg">
 </a>
 
-[![](https://github-readme-stats.vercel.app/api/wakatime?username=utaite&langs_count=10&layout=compact)](https://wakatime.com/@dfd022b5-5fb8-4671-8787-d6ea7cca7720)
+[![](https://github-readme-stats.vercel.app/api/wakatime?username=utaite&langs_count=12&layout=compact)](https://wakatime.com/@dfd022b5-5fb8-4671-8787-d6ea7cca7720)
 
 [![](http://mazassumnida.wtf/api/v2/generate_badge?boj=yuyu6888)](https://solved.ac/yuyu6888)
 
@@ -65,20 +65,8 @@
 <a href="https://aws.amazon.com">
     <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white">
 </a>
-<a href="https://spring.io">
-    <img src="https://img.shields.io/badge/Spring-6DB33F?logo=spring&logoColor=white">
-</a>
 
 ## 💕 Interested ##
-
-### Programming languages ###
-
-<a href="https://rust-lang.org">
-    <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white">
-</a>
-<a href="https://developer.apple.com/swift">
-    <img src="https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white">
-</a>
 
 ### Anime ###
 
