@@ -1,5 +1,4 @@
-## 👋 Hi there ##
-
+## 👋 Hi there
 
 <a href="mailto:utaite6888@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white">
@@ -15,13 +14,13 @@
     <img src="https://wakatime.com/badge/user/dfd022b5-5fb8-4671-8787-d6ea7cca7720.svg">
 </a>
 
-[![](https://github-readme-stats.vercel.app/api/wakatime?username=utaite&langs_count=12&layout=compact)](https://wakatime.com/@dfd022b5-5fb8-4671-8787-d6ea7cca7720)
+[![](https://github-readme-stats.vercel.app/api/wakatime?username=utaite&langs_count=12&layout=compact&range=all_time)](https://wakatime.com/@dfd022b5-5fb8-4671-8787-d6ea7cca7720)
 
 [![](http://mazassumnida.wtf/api/v2/generate_badge?boj=yuyu6888)](https://solved.ac/yuyu6888)
 
-## 🏷️ Stack ##
+## 🏷️ Stack
 
-### Programming languages ###
+### Programming languages
 
 <a href="https://dart.dev/">
     <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white">
@@ -29,23 +28,26 @@
 <a href="https://kotlinlang.org">
     <img src="https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white">
 </a>
+<a href="https://www.rust-lang.org/">
+    <img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white">
+</a>
 <a href="https://www.typescriptlang.org">
     <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
 </a>
 <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=white">
 </a>
-<a href="https://python.org">
-    <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
-</a>
 <a href="https://java.com">
     <img src="https://img.shields.io/badge/Java-007396?logo=java&logoColor=white">
+</a>
+<a href="https://python.org">
+    <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
 </a>
 <a href="https://php.net">
     <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white">
 </a>
 
-### Skills ###
+### Skills
 
 <a href="https://flutter.dev">
     <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white">
@@ -56,19 +58,10 @@
 <a href="https://reactivex.io">
     <img src="https://img.shields.io/badge/ReactiveX-B7178C?logo=ReactiveX&logoColor=white">
 </a>
-<a href="https://nodejs.org">
-    <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white">
-</a>
-<a href="https://vuejs.org">
-    <img src="https://img.shields.io/badge/Vue.js-4FC08D?logo=vue.js&logoColor=white">
-</a>
-<a href="https://aws.amazon.com">
-    <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white">
-</a>
 
-## 💕 Interested ##
+## 💕 Interested
 
-### Anime ###
+### Anime
 
 <a href="http://www.tbs.co.jp/clannad/clannad1/index-j.html">
     <img src="https://img.shields.io/badge/CLANNAD-C76F5F">    
@@ -85,8 +78,11 @@
 <a href="https://tenkinoko.com/">
     <img src="https://img.shields.io/badge/Weathering with You-2CA1F9">
 </a>
+<a href="https://suzume-tojimari-movie.jp/">
+    <img src="https://img.shields.io/badge/Suzume-106898">
+</a>
 
-### J-POP ###
+### J-POP
 
 <a href="https://yuyu-ege.jp">
     <img src="https://img.shields.io/badge/yu--yu-34A497">
@@ -134,7 +130,7 @@
     <img src="https://img.shields.io/badge/ZUTOMAYO-754D8E">
 </a>
 
-### Utaite ###
+### Utaite
 
 <a href="https://youtube.com/channel/UCvp05KhK2ShzaA54CKuE0ow">
     <img src="https://img.shields.io/badge/Ayaponzu*-FEC274">
@@ -203,97 +199,97 @@
     <img src="https://img.shields.io/badge/Zakuro-A4005F">
 </a>
 
-## 🎵 Now Playing ##
+## 🎵 Now Playing
 
-<a href="https://now-playing-profile-psi.vercel.app/now-playing?open=true">
-    <img src="https://now-playing-profile-psi.vercel.app/now-playing">
-</a>
-
-### Recently played ###
-
-<a href="https://now-playing-profile-psi.vercel.app/recently-played?i=0&open=true">
-    <img src="https://now-playing-profile-psi.vercel.app/recently-played?i=0">
-</a>
-<a href="https://now-playing-profile-psi.vercel.app/recently-played?i=1&open=true">
-    <img src="https://now-playing-profile-psi.vercel.app/recently-played?i=1">
-</a>
-<a href="https://now-playing-profile-psi.vercel.app/recently-played?i=2&open=true">
-    <img src="https://now-playing-profile-psi.vercel.app/recently-played?i=2">
-</a>
-<a href="https://now-playing-profile-psi.vercel.app/recently-played?i=3&open=true">
-    <img src="https://now-playing-profile-psi.vercel.app/recently-played?i=3">
-</a>
-<a href="https://now-playing-profile-psi.vercel.app/recently-played?i=4&open=true">
-    <img src="https://now-playing-profile-psi.vercel.app/recently-played?i=4">
-</a>
-<a href="https://now-playing-profile-psi.vercel.app/recently-played?i=5&open=true">
-    <img src="https://now-playing-profile-psi.vercel.app/recently-played?i=5">
+<a href="https://now-playing-profile-utaites-projects.vercel.app/now-playing?open=true">
+    <img src="https://now-playing-profile-utaites-projects.vercel.app/now-playing">
 </a>
 
-### Top tracks ###
+### Recently played
+
+<a href="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=0&open=true">
+    <img src="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=0">
+</a>
+<a href="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=1&open=true">
+    <img src="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=1">
+</a>
+<a href="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=2&open=true">
+    <img src="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=2">
+</a>
+<a href="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=3&open=true">
+    <img src="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=3">
+</a>
+<a href="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=4&open=true">
+    <img src="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=4">
+</a>
+<a href="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=5&open=true">
+    <img src="https://now-playing-profile-utaites-projects.vercel.app/recently-played?i=5">
+</a>
+
+### Top tracks
 
 <details>
   <summary>all</summary>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=0&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=0">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=0&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=0">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=1&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=1">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=1&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=1">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=2&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=2">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=2&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=2">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=3&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=3">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=3&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=3">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=4&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=4">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=4&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=4">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=5&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=long_term&i=5">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=5&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=long_term&i=5">
     </a>
 </details>
 
 <details>
   <summary>last 6 months</summary>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=0&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=0">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=0&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=0">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=1&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=1">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=1&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=1">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=2&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=2">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=2&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=2">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=3&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=3">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=3&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=3">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=4&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=4">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=4&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=4">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=5&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=medium_term&i=5">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=5&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=medium_term&i=5">
     </a>
 </details>
 
 <details>
   <summary>last 4 weeks</summary>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=0&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=0">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=0&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=0">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=1&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=1">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=1&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=1">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=2&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=2">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=2&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=2">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=3&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=3">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=3&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=3">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=4&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=4">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=4&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=4">
     </a>
-    <a href="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=5&open=true">
-        <img src="https://now-playing-profile-psi.vercel.app/top-tracks?time_range=short_term&i=5">
+    <a href="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=5&open=true">
+        <img src="https://now-playing-profile-utaites-projects.vercel.app/top-tracks?time_range=short_term&i=5">
     </a>
 </details>
