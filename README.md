@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/Spotify-1ED760.svg?logo=spotify&logoColor=white">
 </a>
 <a href="#">
-    <img src="https://dcbadge.vercel.app/api/shield/395884319085690881?style=flat"/>
+    <img src="https://dcbadge.limes.pink/api/shield/395884319085690881?style=flat"/>
 </a>
 <br/>
 <a href="https://wakatime.com/@dfd022b5-5fb8-4671-8787-d6ea7cca7720">
